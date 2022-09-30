@@ -10,6 +10,7 @@ html = """
 <html>
 <head></head>
 <body>
+<p> this blog isnt here  </p>
 <script src="index.js">
 </script>
 </body>
@@ -21,15 +22,22 @@ js = """
 
 """
 #commands
-action = input("what do you want do to? (create) blog , (add) post , (remove) post or (edit) post ?")
+action = input("what do you want do to? (create) blog , (add) post , (view) posts , (remove) post or (edit) post ?")
 match action:
   case create: 
-    f = open("index.html", "a")
+    f = open("index.html", "at")
     f.write(html)
     f.close()
-    g = open("index.js", "a")
+    g = open("index.js", "at")
     g.write(js)
     g.close()
   case add:
+    h = open("demofile2.txt", "at")
+    h.write(input("type below post text"))
+    h.close()
   case remove:
+    
   case edit:
+    
+  case view:
+    
