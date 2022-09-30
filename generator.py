@@ -33,7 +33,9 @@ match action:
     g.close()
   case add:
     h = open("demofile2.txt", "at")
-    h.write(input("type below post text"))
+    title = input("type below post title text")
+    post = input("type below post content text")
+    h.write('console.log(',title,'); console.log(',content,');')
     h.close()
   case remove:
     
