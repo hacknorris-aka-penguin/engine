@@ -38,8 +38,8 @@ match action:
     h.write('console.log(',title,'); console.log(',content,');')
     h.close()
   case remove:
-    
+    input("which number of post to remove ?")
   case edit:
-    
+    input("which number of post to edit ?")
   case view:
     
